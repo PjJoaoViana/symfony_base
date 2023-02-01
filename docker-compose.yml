@@ -50,11 +50,13 @@ services:
             - symfony_base_network
 
     # node
-    node-service:
-        image: node:latest
-        container_name: node-container
-        volumes:
-            - ./app:/var/www/project
-        working_dir: /var/www/project
-        networks:
-            - symfony_base_network
+#    node-service:
+#        image: node:19-alpine
+#        ports:
+#            - "8001:8000"
+#        container_name: node-container
+#        volumes:
+#            - ./app:/var/www/project
+#        working_dir: /var/www/project
+#        networks:
+#            - symfony_base_network
